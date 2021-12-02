@@ -6,8 +6,17 @@ public class Account {
 	String owner;
 
 	// account methods
-	void deposit(double value) {
+	public void deposit(double value) {
 		this.balance = this.balance + value;
+	}
+
+	public boolean withdraw(double value) {
+		if (this.balance >= value) {
+			this.balance = this.balance - value;
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 }

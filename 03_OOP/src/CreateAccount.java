@@ -16,6 +16,13 @@ public class CreateAccount {
 		// balance + 50 (value)
 		account.deposit(550);
 		System.out.println("Your new account balance is " + account.balance);
+		
+		//using withdraw method
+		//account.withdraw(500);
+		boolean checkBalance = account.withdraw(400);
+		System.out.println("do you have account balance? " + checkBalance);
+		System.out.println("Your new account balance is " + account.balance);
+		
 	}
 
 }
