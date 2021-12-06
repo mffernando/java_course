@@ -19,4 +19,16 @@ public class Account {
 		}
 	}
 
+	public boolean transfer(double value, Account destination) {
+		if (this.balance >= value) {
+			this.balance = this.balance - value;
+			destination.deposit(value);
+			System.out.println("Deposited " + value);
+			return true;
+		} else {
+			System.out.println("You don't have " + value);
+			return false;
+		}
+	}
+
 }
