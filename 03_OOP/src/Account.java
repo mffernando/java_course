@@ -1,6 +1,6 @@
 
 public class Account {
-	double balance;
+	private double balance;
 	int agency;
 	int number;
 	//String owner;
@@ -30,6 +30,10 @@ public class Account {
 			System.out.println("You don't have " + value);
 			return false;
 		}
+	}
+	
+	public double showBalance() {
+		return this.balance;
 	}
 
 }

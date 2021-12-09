@@ -4,13 +4,13 @@ public class CreateAccount {
 	public static void main(String[] args) {
 		// new account instance
 		Account account = new Account();
-		account.balance = 200;
+		// account.balance = 200;
 
 		Account account2 = new Account();
-		account2.balance = 50;
+		// account2.balance = 50;
 
-		System.out.println("Account Balance: " + account.balance);
-		System.out.println("Account2 Balance: " + account2.balance);
+		// System.out.println("Account Balance: " + account.balance);
+		// System.out.println("Account2 Balance: " + account2.balance);
 
 		// using deposit method
 		// balance + 50 (value)
@@ -27,8 +27,8 @@ public class CreateAccount {
 		boolean deposited = account.transfer(1000, account2);
 
 		if (deposited) {
-			System.out.println("Account: " + account.balance);
-			System.out.println("Account 2: " + account2.balance);
+			// System.out.println("Account: " + account.balance);
+			// System.out.println("Account 2: " + account2.balance);
 		} else {
 			System.out.println("Don't have money");
 		}
@@ -37,15 +37,20 @@ public class CreateAccount {
 		Customer customer = new Customer();
 		customer.name = "Fernando";
 		customer.address = "abc street";
-		
+
 		// account
 		Account customerAccount = new Account();
 		customerAccount.deposit(100);
-		
+
 		customerAccount.owner = customer;
+
+		// System.out.println("Hello " + customerAccount.owner.name + "!! Your balance
+		// is " + customerAccount.balance);
 		
-		System.out.println("Hello " + customerAccount.owner.name + "!! Your balance is " + customerAccount.balance);
-		
+		//show private balance
+		account.deposit(100);
+		System.out.println(account.showBalance());
+
 	}
 
 }
