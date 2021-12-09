@@ -3,8 +3,9 @@ public class Account {
 	double balance;
 	int agency;
 	int number;
-	String owner;
-
+	//String owner;
+	Customer owner;
+	
 	// account methods
 	public void deposit(double value) {
 		this.balance = this.balance + value;
