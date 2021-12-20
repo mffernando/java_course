@@ -35,8 +35,10 @@ public class CreateAccount {
 
 		// customer
 		Customer customer = new Customer();
-		customer.name = "Fernando";
-		customer.address = "abc street";
+		//customer.name = "Fernando";
+		customer.setName("Fernando");
+		//customer.address = "abc street";
+		customer.setAddress("abc street");
 
 		// account
 		Account customerAccount = new Account();
@@ -44,7 +46,8 @@ public class CreateAccount {
 
 		//customerAccount.owner = customer;
 		customerAccount.setOwner(customer);
-		System.out.println(customerAccount.getOwner());
+		System.out.println(customerAccount.getOwner().getName());
+		System.out.println(customerAccount.getOwner().getAddress());
 
 		// System.out.println("Hello " + customerAccount.owner.name + "!! Your balance
 		// is " + customerAccount.balance);
