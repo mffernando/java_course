@@ -42,14 +42,16 @@ public class CreateAccount {
 		Account customerAccount = new Account();
 		customerAccount.deposit(100);
 
-		customerAccount.owner = customer;
+		//customerAccount.owner = customer;
+		customerAccount.setOwner(customer);
+		System.out.println(customerAccount.getOwner());
 
 		// System.out.println("Hello " + customerAccount.owner.name + "!! Your balance
 		// is " + customerAccount.balance);
 		
 		//show private balance
 		account.deposit(100);
-		System.out.println(account.showBalance());
+		System.out.println(account.getBalance());
 
 	}
 

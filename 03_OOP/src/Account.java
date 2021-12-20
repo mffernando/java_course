@@ -1,10 +1,10 @@
 
 public class Account {
 	private double balance;
-	int agency;
-	int number;
+	private int agency;
+	private int number;
 	//String owner;
-	Customer owner;
+	private Customer owner;
 	
 	// account methods
 	public void deposit(double value) {
@@ -32,8 +32,38 @@ public class Account {
 		}
 	}
 	
-	public double showBalance() {
+	//getters & setters
+	
+	public double getBalance() {
 		return this.balance;
+	}
+	
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	
+	public int getNumber() {
+		return this.number;
+	}
+	
+	public void getNumber(int number) {
+		this.number = number;
+	}
+	
+	public int getAgency() {
+		return this.agency;
+	}
+	
+	public void setAgency(int agency) {
+		this.agency = agency;
+	}
+	
+	public Customer getOwner() {
+		return this.owner;
+	}
+	
+	public void setOwner(Customer owner) {
+		this.owner = owner;
 	}
 
 }
