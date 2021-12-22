@@ -5,6 +5,10 @@ public class CreateAccount {
 		
 		//constructor (agency, number)
 		Account account = new Account(150264, 94234);
+		Account account2 = new Account(150264, 12546);
+		Account account3 = new Account(150264, 75642);
+		
+		System.out.println(Account.getTotal());
 		
 		// new account instance
 		//Account account = new Account();
