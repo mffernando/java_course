@@ -6,6 +6,14 @@ public class Account {
 	//String owner;
 	private Customer owner;
 	
+	// constructor
+	
+	public Account(int agency, int number) {
+		this.agency = agency;
+		this.number = number;
+		System.out.println("Agency: " + this.agency + " Number: " + this.number);
+	}
+	
 	// account methods
 	public void deposit(double value) {
 		this.balance = this.balance + value;
