@@ -15,4 +15,9 @@ public class Manager extends Employee{
 		}
 	}
 	
+	// getBonus = wage * 2
+	public double getBonus() {
+		return super.wage * 2;
+	}
+	
 }

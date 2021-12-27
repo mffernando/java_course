@@ -3,7 +3,7 @@ public class Employee {
 
 	private String name;
 	private String cpf;
-	private double wage;
+	protected double wage;
 
 	// methods
 
