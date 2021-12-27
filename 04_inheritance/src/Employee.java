@@ -3,13 +3,13 @@ public class Employee {
 
 	private String name;
 	private String cpf;
-	protected double wage;
+	private double wage;
 
 	// methods
 
 	// getBonus = wage + 10%
 	public double getBonus() {
-		return this.wage * 0.1;
+		return this.wage * 0.05;
 	}
 
 	// getters and setters
