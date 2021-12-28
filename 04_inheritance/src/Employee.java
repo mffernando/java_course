@@ -9,6 +9,7 @@ public class Employee {
 
 	// getBonus = wage + 10%
 	public double getBonus() {
+		System.out.println("Employee");
 		return this.wage * 0.05;
 	}
 
