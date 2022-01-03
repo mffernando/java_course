@@ -63,6 +63,13 @@ public class CreateAccount {
 		//show private balance
 		//account.deposit(100);
 		//System.out.println(account.getBalance());
+		
+		// Current Account
+		CurrentAccount currentAccount = new CurrentAccount(1, 12548);
+		currentAccount.deposit(150.0);
+		currentAccount.withdraw(10.0);
+		
+		System.out.println(currentAccount.getBalance());
 
 	}
 
