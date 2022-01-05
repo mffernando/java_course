@@ -3,7 +3,7 @@ public class CreateEmployee {
 
 	public static void main(String[] args) {
 
-		Employee employee = new Employee();
+		Employee employee = new Manager();
 		
 		employee.setName("Fernando");
 		employee.setCpf("11122233344");
