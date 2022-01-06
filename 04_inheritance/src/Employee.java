@@ -8,10 +8,13 @@ public abstract class Employee {
 	// methods
 
 	// getBonus = wage + 10%
-	public double getBonus() {
-		System.out.println("Employee");
-		return this.wage * 0.05;
-	}
+	// public double getBonus() {
+	// System.out.println("Employee");
+	// return this.wage * 0.05;
+	// }
+	
+	//abstract method
+	public abstract double getBonus();
 
 	// getters and setters
 	public String getName() {

@@ -18,7 +18,7 @@ public class Manager extends Employee{
 	// getBonus = employee bonus + wage
 	public double getBonus() {
 		System.out.println("Manager");
-		return super.getBonus() + super.getWage();
+		return super.getWage();
 	}
 	
 }
