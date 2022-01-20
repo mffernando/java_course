@@ -1,4 +1,11 @@
 
+/**
+ * 
+ * @author Fernando
+ * @version 1.0
+ *
+ */
+
 public class Connection implements AutoCloseable {
 
 	// constructor
